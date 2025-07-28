@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emojis and URLs in HTML</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      text-align: center;
+    }
+    th,
+    td {
+      border: 1px solid #333;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <body>
+    <!-- Q1: URL ENCODING REPRESENTATION-->
+    <h1>URL Encoding Visualization</h1>
+    <strong>Original URL (Before Encoding):</strong>
+    <p>https://example.com/search?query=hello world & category=books</p>
+
+    <strong>Encoded URL (After Encoding):</strong>
+    <p>
+      https://example.com/search?query=hello%20world%20%26%20category%3Dbooks
+    </p>
+    <p>Some common encoded characters</p>
+    <list>
+      <ul>
+        <li>Space --> %20</li>
+        <li>& --> %26</li>
+        <li>* --> %3D</li>
+        <li>? --> %3F</li>
+      </ul>
+    </list>
+
+    <!-- Q2: EMOJIS REPRESENTATION-->
+    <h1>Emojis in HTML</h1>
+    <p>React Emoji Example: 😊😊😊😊😊😊😊😊</p>
+    <p>Another Emoji: ❤️</p>
+    <p>Using Unocode Entity: &#128512; --> 😀</p>
+    <p>😊 HTML 😁 & CSS!</p>
+    <h1>ASCII Values Table</h1>
+    <table>
+      <tr>
+        <th>Character</th>
+        <th>ASCII Value</th>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>65</td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>97</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>48</td>
+      </tr>
+      <tr>
+        <td>@</td>
+        <td>64</td>
+      </tr>
+      <tr>
+        <td>Space</td>
+        <td>32</td>
+      </tr>
+      <tr>
+        <td>$</td>
+        <td>36</td>
+      </tr>
+    </table>
+    <p>
+      ASCII helps in converting characters into numbers that computers can
+      understand.
+    </p>
+  </body>
+</html>
