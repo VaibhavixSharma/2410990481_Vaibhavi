@@ -59,3 +59,38 @@ int main(){
 It is a form of compile time polymorphism
 It allows to define multiple functions with same name but different parameters
 */
+
+
+// PRACTICE QUESTIONS 
+// EASY 1
+// What will be the output? Why?
+
+void fun(int x){
+    x += 5;
+}
+int main(){
+    int a = 10;
+    fun(a);
+    cout<<a<<endl;
+    return 0;
+}
+
+
+// EASY 2
+// Write a fxn that swaps the values of two integers using call by reference. Call it in main and show the result.
+
+int swapnum(int &x, int &y){
+    int temp;
+    temp = y;
+    y = x;
+    x = temp;
+    return 0;
+} 
+
+int main(){
+    int a = 5;
+    int b = 10;
+    swapnum(a,b);
+    cout<<"a = "<<a<<", "<<"b = "<<b<<endl;
+    return 0;
+}
