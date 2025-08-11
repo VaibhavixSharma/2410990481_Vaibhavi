@@ -1,0 +1,51 @@
+.box {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+
+  border-top: 5px solid red;
+  border-right: 10px dashed blue;
+  border-bottom: 8px dotted;
+  border-left: 6px solid orange;
+
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+
+  border-radius: 10px;
+
+  background-color: lightyellow;
+  color: #333;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+  box-sizing: content-box;
+  width: 400px;
+}
+
+body {
+  background-color: lightblue;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  padding: 20px;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    background-color: lightgreen;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: lightcoral;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+}
